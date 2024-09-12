@@ -5,6 +5,7 @@ import { Canvas, useThree } from '@react-three/fiber'
 import { Fisheye, Environment, ContactShadows, OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import Car from './Car'
 import { Perf } from 'r3f-perf'
+import Header from './_components/Header'
 
 export default function App() {
   const { mapping, exposure } = useControls({
@@ -12,17 +13,20 @@ export default function App() {
     mapping: { value: 'ACESFilmic', options: ['No', 'Linear', 'AgX', 'ACESFilmic', 'Reinhard', 'Cineon', 'Custom'] },
   })
   return (
-    <Canvas>
-      <Fisheye resolution={768} zoom={0.25}>
-        <Environment files="/old_depot_2k.hdr" ground={{ height: 35, radius: 100, scale: 200 }} />
-        <Car position={[-8, 0, -2]} scale={20} rotation-y={-Math.PI / 4} />
-        <ContactShadows renderOrder={2} frames={1} resolution={1024} scale={120} blur={2} opacity={0.6} far={100} />
-        <OrbitControls enableZoom={false} enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI / 2.25} makeDefault />
-        <PerspectiveCamera makeDefault position={[45, 45, 10]} fov={100} />
-      </Fisheye>
-      <Tone mapping={mapping} exposure={exposure} />
-      {/* <Perf /> */}
-    </Canvas>
+    <>
+      <Header />
+      <Canvas>
+        <Fisheye resolution={768} zoom={0.25}>
+          <Environment files="/old_depot_2k.hdr" ground={{ height: 35, radius: 100, scale: 200 }} />
+          <Car position={[-8, 0, -2]} scale={20} rotation-y={-Math.PI / 4} />
+          <ContactShadows renderOrder={2} frames={1} resolution={1024} scale={120} blur={2} opacity={0.6} far={100} />
+          <OrbitControls enableZoom={false} enablePan={false} minPolarAngle={0} maxPolarAngle={Math.PI / 2.25} makeDefault />
+          <PerspectiveCamera makeDefault position={[45, 45, 10]} fov={100} />
+        </Fisheye>
+        <Tone mapping={mapping} exposure={exposure} />
+        {/* <Perf /> */}
+      </Canvas>
+    </>
   )
 }
 
