@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import './styles.css'
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <div className="logo-container">
         <img src="./logo2.png" alt="Logo Carros Online" className="logo" />
       </div>
-      <nav className="nav">
+      <nav className="container red topBotomBordersOut">
         <ul className="nav-list">
           <li className="nav-item">
             <a href="#home">Home</a>

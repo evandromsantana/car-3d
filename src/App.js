@@ -14,6 +14,7 @@ export default function App() {
     exposure: { value: 0.85, min: 0, max: 4 },
     mapping: { value: 'ACESFilmic', options: ['No', 'Linear', 'AgX', 'ACESFilmic', 'Reinhard', 'Cineon', 'Custom'] },
   })
+
   return (
     <>
       <Header />
