@@ -6,6 +6,7 @@ import { Fisheye, Environment, ContactShadows, OrbitControls, PerspectiveCamera 
 import Car from './Car'
 import { Perf } from 'r3f-perf'
 import Header from './_components/Header'
+import Footer from './_components/Footer'
 
 import LogoScroll from './_components/LogoScroll'
 
@@ -30,6 +31,7 @@ export default function App() {
         {/* <Perf /> */}
       </Canvas>
       <LogoScroll />
+      <Footer />
     </>
   )
 }

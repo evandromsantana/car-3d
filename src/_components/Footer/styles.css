@@ -1,0 +1,30 @@
+/* Footer.css */
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0.25rem; /* Adiciona um pouco de espaço ao redor do conteúdo */
+  text-align: right; /* Alinha o texto à direita */
+  background-color: rgba(0, 0, 0, 0.1); /* Adiciona um fundo claro para visibilidade */
+  color: #6b7280; /* Cor do texto */
+  width: 100%; /* Garante que o rodapé ocupe toda a largura da página */
+}
+
+.footer-text {
+  margin: 0; /* Remove margens adicionais */
+  font-size: 0.75rem; /* Tamanho da fonte */
+  color: rgb(209 213 219);
+  font-family: 'Raleway', sans-serif;
+}
+
+.footer-text a {
+  color: #ffdf71; /* Cor do link */
+  text-decoration: none; /* Remove o sublinhado */
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer-text a:hover {
+  color: #ff9900; /* Cor do link ao passar o mouse */
+  text-decoration: none; /* Adiciona sublinhado ao passar o mouse */
+}

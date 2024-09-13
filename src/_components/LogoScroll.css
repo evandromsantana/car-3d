@@ -5,7 +5,7 @@
   width: 100%;
   flex-direction: column;
   position: fixed; /* Posiciona fixamente */
-  bottom: 0; /* Fixa na parte inferior */
+  bottom: 10px; /* Fixa na parte inferior */
   left: 0; /* Faz o componente ocupar a largura inteira */
   background-color: transparent; /* Fundo transparente */
   z-index: 10; /* Certifica que fique acima de outros elementos */

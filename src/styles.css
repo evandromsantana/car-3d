@@ -11,3 +11,27 @@ canvas {
   overflow: hidden;
   margin: 0;
 }
+
+.footer-text {
+  margin-top: 1rem; /* mt-4 */
+  font-size: 0.875rem; /* text-sm */
+  color: #6b7280; /* text-gray-500 */
+}
+
+.footer-text a {
+  color: #1d4ed8; /* texto padrão do link */
+  text-decoration: none; /* remove o sublinhado */
+}
+
+.footer-text a:hover {
+  color: #3b82f6; /* hover:text-primary */
+  text-decoration: underline; /* adiciona sublinhado ao passar o mouse */
+}
+
+/* Responsivo */
+@media (min-width: 640px) {
+  .footer-text {
+    order: 1; /* sm:order-first */
+    margin-top: 0; /* sm:mt-0 */
+  }
+}
