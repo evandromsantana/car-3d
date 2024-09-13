@@ -7,6 +7,8 @@ import Car from './Car'
 import { Perf } from 'r3f-perf'
 import Header from './_components/Header'
 
+import LogoScroll from './_components/LogoScroll'
+
 export default function App() {
   const { mapping, exposure } = useControls({
     exposure: { value: 0.85, min: 0, max: 4 },
@@ -26,6 +28,7 @@ export default function App() {
         <Tone mapping={mapping} exposure={exposure} />
         {/* <Perf /> */}
       </Canvas>
+      <LogoScroll />
     </>
   )
 }

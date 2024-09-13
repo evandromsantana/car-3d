@@ -1,0 +1,67 @@
+.logo-scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  position: fixed; /* Posiciona fixamente */
+  bottom: 0; /* Fixa na parte inferior */
+  left: 0; /* Faz o componente ocupar a largura inteira */
+  background-color: transparent; /* Fundo transparente */
+  z-index: 10; /* Certifica que fique acima de outros elementos */
+  padding: 8px 0; /* Adiciona um pouco de espaço */
+}
+
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 8px 0;
+  background-color: transparent; /* Fundo transparente */
+}
+
+.marquee-content {
+  display: flex;
+  gap: 15px;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+.marquee-item {
+  display: flex;
+  flex-direction: column;
+  width: 100px; /* Reduz a largura das logos */
+  height: 72px; /* Reduz a altura */
+  padding: 6px; /* Reduz o padding interno */
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  margin: 4px; /* Reduz a margem */
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-image {
+  height: 32px;
+  margin: 8px;
+}
+
+.separator {
+  width: 60px;
+  height: 1px;
+  background-color: #e5e7eb;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .separator {
+    display: block;
+  }
+}
+
+.marquee-text {
+  font-size: 8px; /* Reduz o tamanho do texto */
+  font-weight: 500;
+  color: #9ca3af;
+}
